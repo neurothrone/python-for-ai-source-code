@@ -17,5 +17,5 @@ else:
 # !: or example
 # age = 15
 # exam_score = 50
-# are_your_cool = age >= 18 or exam_score >= 60
-# print(are_your_cool) 
+# are_you_cool = age >= 18 or exam_score >= 60
+# print(are_you_cool)

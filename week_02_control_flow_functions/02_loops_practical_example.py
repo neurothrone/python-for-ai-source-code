@@ -12,7 +12,7 @@ while is_running:
 
     # Based on that input do different things
     if menu_choice == "1":
-        for fruit in ["Apples", "Bananas", "Fruits"]:
+        for fruit in ["Apples", "Bananas", "Pears"]:
             print(f"- {fruit}")
     elif menu_choice == "2":
         print("- Surprise!")

@@ -45,6 +45,9 @@ def run_calculator():
             print("Terminating calculator... :/")
             break
 
+        # Note: This check is simple and works for normal single-character input.
+        # But "+-" can still pass, because Python checks if each typed character exists in "+-*/q".
+        # Later, we can make it stricter with an exact-token list check.
         #if operation not in ["+", "-", "*", "/", "q"]:
         if operation not in "+-*/q":
             print("Invalid choice, try again.")
@@ -62,11 +65,13 @@ def run_calculator():
         elif operation == "/":
             result = divide(first_number, second_number)
 
-        if result: # if True
+        # This looks fine, but it fails when result == 0 because 0 is treated as False.
+        # if result:
+        #     print(f"Result: {result}")
+
+        if result is not None:  # if it has a value
             print(f"Result: {result}")
-        # if result is None: # if it does not have a value
-        #     pass
-        # if result is not None: # if it has a value
+        # if result is None:  # if it does not have a value
         #     pass
 
 

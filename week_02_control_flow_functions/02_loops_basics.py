@@ -39,7 +39,7 @@ for num in [1, 2, 3, 4, 5]:
 #     if number > 5:
 #         break
 
-#     # I dont want to print even numbers
+#     # I don't want to print even numbers
 #     is_number_even = number % 2 == 0
 #     if is_number_even:
 #         continue
